@@ -1,0 +1,2 @@
+SELECT CAST(SQRT(CAST(SQUARE(CAST(MAX(LAT_N) AS decimal(10,4)) - CAST(MIN(LAT_N) AS decimal(10,4))) AS decimal(10,4)) + CAST(SQUARE(CAST(MAX(LONG_W) AS decimal(10,4)) - CAST(MIN(LONG_W) AS decimal(10,4))) AS decimal(10,2))) AS decimal(10,4))
+FROM Station;
